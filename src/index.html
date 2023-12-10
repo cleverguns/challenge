@@ -4,38 +4,197 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="scss/base/styles.scss">
+
     <title>PITG</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Source+Sans+3:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.scss">
+  
   </head>
-  <body>
-    
-    <header>
-      <div class="logo">
-        <!-- Your logo goes here -->
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Compliments</a></li>
-          <li><a href="#">Video Library</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </nav>
-      <div class="cta">
-        <button>Contact</button>
-        <button>Book a Class</button>
-      </div>
-    </header>
-  
-    <section class="main-content">
-      <!-- Your main content goes here -->
-    </section>
-  
+  <nav>
+    <button class="toggler">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="d-flex">
+        <img src="sm_5ad226daa30f6-removebg-preview.png" alt="logo">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Compliments</a>
+        <a href="#">Video Library</a>
+        <a href="#">Blog</a>
+    </div>
+    <div class="d-2">
+        <a href="#">Contact</a>
+        <button>Book Class</button>
+    </div>
+</nav>
+<div class="side-bar">
+    <img src="sm_5ad226daa30f6-removebg-preview.png" alt="logo">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Compliments</a>
+    <a href="#">Video Library</a>
+    <a href="#">Blog</a>
+</div>
+<main>
+    <div class="d-1">
+        <h4>FEATURED SERVICES</h4>
+        <div class="row">
+            <div class="col">
+                <button>
+                    <i class="fa-solid fa-person-walking"></i>
+                </button>
+                <div>
+                    <h5>In-Studio Pilates</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="col">
+                <button>
+                    <i class="fa-solid fa-home"></i>
+                </button>
+                <div>
+                    <h5>Pilates at home</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="col">
+                <button>
+                    <i class="fa-solid fa-hammer"></i>
+                </button>
+                <div>
+                    <h5>Reset/Recover/Rehab</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h4>PERSONALIZED PILATES</h4>
+        <div class="row">
+            <div class="col">
+                <button>
+                    <i class="fa-solid fa-lock"></i>
+                </button>
+                <div>
+                    <h5>Private Sessions</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="col">
+                <button>
+                    <i class="fa-solid fa-lock"></i>
+                </button>
+                <div>
+                    <h5>Semi-Private Sessions</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="col">
+                <button>
+                    <i class="fa-solid fa-group-arrows-rotate"></i>
+                </button>
+                <div>
+                    <h5>Small Group Classes</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h4 style="text-align: center; color: plum;">
+            <a href="#" style="color: rgb(134, 85, 134);">
+                Explore all services
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </h4>
+        <br>
+        <hr size="3" color="#ccc">
+        <br>
+        <div class="d-3">
+            <div class="row">
+            <div class="col">
+                <button>
+                    <i class="fa-solid fa-location-dot"></i>
+                </button>
+                <div>
+                    <h5>Coconut Grove</h5>
+                    <p>1-305-446-9898</p>
+                </div>
+            </div>
+            <div class="col">
+                <button>
+                    <i class="fa-solid fa-location-dot"></i>
+                </button>
+                <div>
+                    <h5>South Miami</h5>
+                    <p>1-305-397-8308</p>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <a href="#">1-305-446-6899</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="d-2">
+        <h4 style="margin: 20px 0;">FEATURED SERVICES</h4>
+        <div class="row">
+            <div class="col">
+                <button>
+                    <i class="fa-solid fa-kit-medical"></i>
+                </button>
+                <h5>Thai Massage</h5>
+            </div>
+            <div class="col">
+                <button>
+                    <i class="fa-solid fa-syringe"></i>
+                </button>
+                <h5>Dry Needling</h5>
+            </div>
+            <div class="col">
+                <button>
+                    <i class="fa-solid fa-suitcase-medical"></i>
+                </button>
+                <h5>Red Light Therapy</h5>
+            </div>
+            <div class="col">
+                <button>
+                    <i class="fa-solid fa-box-tissue"></i>
+                </button>
+                <h5>
+                    Cupping & Soft
+                    <br>
+                    Tissue Mobilization
+                </h5>
+            </div>
+        </div>
+        <h4 style="margin: 20px 0;">MEMBERSHIP OFFERS</h4>
+        <div class="row">
+            <div class="col">
+                <h5>VIP Memberships</h5>
+            </div>
+            <div class="col">
+                <h5>New Client Specials</h5>
+            </div>
+            <div class="col">
+                <h5>4-Point Checkup</h5>
+            </div>
+        </div>
+        <h4 style="margin: 20px 0;">LEARN MORE</h4>
+        <div class="row">
+            <div class="col">
+                <h5>Courses and Programs</h5>
+            </div>
+            <div class="col">
+                <h5>Free Resources</h5>
+            </div>
+        </div>
+    </div>
+</main>
     <footer>
       <!-- Your footer content goes here -->
     </footer>
