@@ -1,3 +1,4 @@
+/*
 .btn {
   @extend %button-default;
   &-primary {
@@ -7,5 +8,38 @@
   }
   &.ghost {
     @extend %button-ghost;
+  }
+}
+*/
+
+// File: src/scss/base/_button.scss
+
+.btn {
+  @extend %button-default;
+  &-primary {
+    @apply bg-purple-500; // Change the color to purple
+    @apply text-white;    // Set text color to white
+    @apply border border-purple-500;
+  }
+  &.ghost {
+    @extend %button-ghost;
+  }
+}
+
+// Additional styles for the buttons in the .cta container
+.cta {
+  .btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .btn-primary {
+    @extend .btn-primary; // Extending the styles defined in _button.scss
+  }
+
+  .btn.ghost {
+    @extend .ghost; // Extending the styles defined in _button.scss
   }
 }
