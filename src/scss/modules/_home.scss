@@ -1,0 +1,23 @@
+//BEM - Block - Element Inner Class - Modifier
+.home {
+  $self: &;
+  @apply w-screen h-screen flex flex-col justify-center items-center bg-slate-600;
+  &-purple {
+    @apply bg-pitg-primary-purple;
+  }
+  &-header {
+    @apply font-montserrat text-2xl font-semibold text-cyan-200;
+    #{$self}-purple & {
+      @apply text-slate-50;
+    }
+  }
+  &-subtext {
+    @apply text-lg text-cyan-400 font-medium text-center;
+    #{$self}-purple & {
+      @apply text-slate-200;
+    }
+  }
+}
+
+
+

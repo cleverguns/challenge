@@ -1,0 +1,11 @@
+.btn {
+  @extend %button-default;
+  &-primary {
+    @apply bg-pink-300;
+    @apply text-slate-800;
+    @apply border border-pink-300;
+  }
+  &.ghost {
+    @extend %button-ghost;
+  }
+}
